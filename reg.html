@@ -1,0 +1,93 @@
+<html>
+<center>
+<head>
+    <link rel="stylesheet" href="reg.css">
+    <style>
+        body {
+            background-image: url('C:/Users/alekh/Downloads/image1.jpeg');
+            background-repeat: no-repeat;
+            background-size: cover;
+            margin-top: 40px;
+            font-size: 30px;
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <h1 style="color:rgb(17, 17, 17)">Registration</h1>
+        <form id="registrationForm" onsubmit="return validateForm()">
+            <div class="FirstName">
+                <input type="text" placeholder="First Name" id="firstName"><br>
+            </div>
+            
+            <div class="LastName">
+                <input type="text" placeholder="Last Name" id="lastName"><br>
+            </div>
+            <div class="Email">
+                <input type="email" placeholder="Email" id="email"><br>
+            </div>
+            <div class="Password">
+                <input type="password" placeholder="Password" id="password"><br>
+                
+            </div>
+            <div class="ConfirmPassword">
+                <input type="password" placeholder="Confirm Password" id="confirmPassword"><br><br>
+                
+            </div>
+            
+            <a href="file:///C:/Users/alekh/OneDrive/Desktop/prgms/signin.html"><br>
+                <button>Register</button><br><br>
+            </a>
+
+        </form>
+    </div>
+    <script>
+        function validateForm() {
+            var firstName = document.getElementById("firstName").value;
+            var lastName = document.getElementById("lastName").value;
+            var email = document.getElementById("email").value;
+            var password = document.getElementById("password").value;
+            var confirmPassword = document.getElementById("confirmPassword").value;
+            
+            if (!firstName) {
+                alert("First Name is required.");
+                return false;
+            }
+
+            if (!lastName) {
+                alert("Last Name is required.");
+                return false;
+            }
+
+            if (!email) {
+                alert("Email is required.");
+                return false;
+            }
+
+            if (!emailPattern.test(email)) {
+                alert("Please enter a valid email address.");
+                return false;
+            }
+
+            if (!password) {
+                alert("Password is required.");
+                return false;
+            }
+
+            if (password.length < 8) {
+                alert("Password must be at least 8 characters long.");
+                return false;
+            }
+
+            if (password !== confirmPassword) {
+                alert("Passwords do not match.");
+                return false;
+            }
+
+            window.location.href = "file:///C:/Users/alekh/OneDrive/Desktop/prgms/signin.html";
+            return false;
+        }
+    </script>
+</body>
+</center>
+</html>

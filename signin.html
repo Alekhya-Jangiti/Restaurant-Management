@@ -1,0 +1,62 @@
+<html>
+ <center>
+    <head>
+        
+        <link rel="stylesheet" href="login.css"/>
+        <style>
+            body{
+                background-image: url('C:/Users/alekh/Downloads/image1.jpeg');
+                background-repeat:no-repeat;
+                background-size:cover;
+            }
+        </style>
+    </head>
+    <body>
+        <style>
+            body{
+                margin-top:40px;
+                font-size:20px;
+            }
+        </style>
+        
+        <div class="card">
+            <h1 style="color:rgb(19, 16, 16)">Login</h1>
+            <div class="Username">
+                <input type="text"placeholder="Username"id="Username"/><br><br>
+            </div>
+            
+            <div class="Password">
+                <input type="Password"placeholder="Password"id="Password"><br><br>
+                
+            </div>
+            
+
+            <button onclick="validateForm()">Login</button><br><br>
+               
+            <div class="register">Not a member?<a href="regi.html">register</a>
+        </div>
+    
+    <script>
+        function pass() {
+            var passwordField = document.getElementById('Password');
+            if (passwordField.type === 'password') {
+                passwordField.type = 'text';
+            } else {
+                passwordField.type = 'password';
+            }
+        }
+
+        function validateForm() {
+            var username = document.getElementById('Username').value;
+            var password = document.getElementById('Password').value;
+
+            if (username === "" || password === "") {
+                alert("Username and Password cannot be empty.");
+            } else {
+                window.location.href = "file:///C:/Users/alekh/OneDrive/Desktop/prgms/btn.html";
+            }
+        }
+        </script>
+        </body>
+</center>
+</html>

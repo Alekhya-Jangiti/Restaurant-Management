@@ -1,0 +1,23 @@
+.container {
+    margin-top:10%;
+    margin-left:15%;
+    margin-right:15%;
+    margin-bottom:10%;
+    height:30%;
+    border-radius:20px;
+    background-color:rgb(229, 138, 199);
+    
+}
+.content {
+    color: aliceblue;
+    display:flex;
+    padding:20px;
+    gap:5rem;
+    color:black;
+    font-size: 23px;
+    place-content: center;
+    text-align: center;
+    margin-top: 160px;
+
+    
+}

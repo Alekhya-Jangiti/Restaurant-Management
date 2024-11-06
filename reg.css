@@ -1,0 +1,53 @@
+.card {
+    margin-top:10%;
+    margin-left:5%;
+    margin-bottom:10%;
+    width:400px;
+    height:600px;
+    border-radius:20px;
+    background-color:rgb(189, 185, 185);
+    text-align:center;
+}
+.FirstName input {
+    padding:15px 5px;
+    margin-top:20px;
+    border:none;
+    outline:none;
+    font-size:22px;
+    border-bottom:2px solid rgb(11, 10, 10);
+}
+.LastName input {
+    padding:15px 5px;
+    margin-top:20px;
+    border:none;
+    outline:none;
+    font-size:22px;
+    border-bottom:2px solid rgb(11, 10, 10);
+}
+.Email input {
+    padding:15px 5px;
+    margin-top:20px;
+    border:none;
+    outline:none;
+    font-size:22px;
+    border-bottom:2px solid rgb(11, 10, 10);
+}
+
+.Password input {
+    padding:15px 5px;
+    margin-top:20px;
+    border:none;
+    outline:none;
+    font-size:22px;
+    border-bottom:2px solid rgb(11, 10, 10);
+}
+
+
+.ConfirmPassword input {
+    padding:15px 5px;
+    margin-top:20px;
+    border:none;
+    outline:none;
+    font-size:22px;
+    border-bottom:2px solid rgb(11, 10, 10);
+}
